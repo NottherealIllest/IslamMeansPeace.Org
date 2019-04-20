@@ -1,5 +1,11 @@
 <template>
-  <svg width="253" height="57" viewBox="0 0 253 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    width="253"
+    height="57"
+    viewBox="0 0 253 57"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <path
       d="M158.577 17.6585C158.851 17.6585 159.072 17.4369 159.072 17.1636V8.35623C159.072 8.08293 158.851 7.86133 158.577 7.86133C158.304 7.86133 158.083 8.08293 158.083 8.35623V17.1637C158.083 17.4369 158.304 17.6585 158.577 17.6585Z"
       fill="white"
@@ -110,7 +116,6 @@
     ></path>
   </svg>
 </template>
-
 
 <style lang="scss" scoped>
 svg {

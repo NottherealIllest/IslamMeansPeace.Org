@@ -1,14 +1,17 @@
 <template>
   <section class="hero">
     <div class="hero__gradient">
-    <div class="navbar"><navigation /></div>
+      <div class="navbar"><navigation /></div>
       <div class="container">
         <h3 class="quote">
-          Every soul will taste death, and you will only be given your [full] compensation on the Day of Resurrection.
-          So he who is drawn away from the Fire and admitted to Paradise has attained [his desire].
-          And what is the life of this world except the enjoyment of delusion.
+          Every soul will taste death, and you will only be given your [full]
+          compensation on the Day of Resurrection. So he who is drawn away from
+          the Fire and admitted to Paradise has attained [his desire]. And what
+          is the life of this world except the enjoyment of delusion.
         </h3>
-        <p class="quote source">Surah Ali 'Imran [3:185] - Al-Qur'an al-Kareem</p>
+        <p class="quote source">
+          Surah Ali 'Imran [3:185] - Al-Qur'an al-Kareem
+        </p>
         <div class="buttons">
           <router-link class="btn btn-prm" to="/">Donate Now</router-link>
           <router-link class="btn btn-sec" to="/">Learn More</router-link>
@@ -24,13 +27,12 @@ export default {
   components: {
     Navigation
   }
-}
+};
 </script>
-
 
 <style lang="scss" scoped>
 .hero {
-  background-image: url("../assets/img/praybg.png");
+  background-image: url("../../assets/img/praybg.png");
   width: 100%;
   // position: absolute;
   &__gradient {

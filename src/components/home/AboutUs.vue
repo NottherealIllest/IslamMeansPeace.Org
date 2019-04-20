@@ -6,22 +6,30 @@
           <div class="about-bg">
             <h4 class="about-bg__title">About Us</h4>
             <p class="about-bg__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Tortor condimentum lacinia quis vel eros donec
-              A iaculis at erat pellentesque adipiscing commodo elit at imperdiet.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.Tortor
+              condimentum lacinia quis vel eros donec A iaculis at erat
+              pellentesque adipiscing commodo elit at imperdiet.
             </p>
           </div>
         </div>
         <!-- <div class="col-md-1">k</div> -->
         <div class="col-md-8">
-          <p
-            class="messenger-quote"
-          >“The Messenger of Allaah (peace and blessings of Allaah be upon him) said: “Whoever gives iftaar to a fasting person will have a reward like his, without that detracting from the reward of the fasting person in the slightest.” Narrated by al-Tirmidhi, who said it is a saheeh hasan hadeeth. “</p>
+          <p class="messenger-quote">
+            “The Messenger of Allaah (peace and blessings of Allaah be upon him)
+            said: “Whoever gives iftaar to a fasting person will have a reward
+            like his, without that detracting from the reward of the fasting
+            person in the slightest.” Narrated by al-Tirmidhi, who said it is a
+            saheeh hasan hadeeth. “
+          </p>
           <div class="break"></div>
           <p class="more-info">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Tortor condimentum lacinia quis vel eros donec
-            A iaculis at erat pellentesque adipiscing commodo elit at imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Tortor condimentum
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.Tortor
+            condimentum lacinia quis vel eros donec A iaculis at erat
+            pellentesque adipiscing commodo elit at imperdiet.Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.Tortor condimentum
           </p>
           <div class="btn-cont">
             <router-link class="btn btn-trt" to="/">Change a Life</router-link>
@@ -32,13 +40,12 @@
   </div>
 </template>
 
-
 <style lang="scss" scoped>
 #about {
-  padding: 4rem 0;
+  padding: 10rem 0;
   .about-bg {
     height: 100%;
-    background-image: url("../assets/img/aboutbg.png");
+    background-image: url("../../assets/img/aboutbg.png");
     box-shadow: 0px 4px 4px rgba($black, 0.25);
     background-size: cover;
     width: 100%;
