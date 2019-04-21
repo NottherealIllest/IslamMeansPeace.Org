@@ -5,18 +5,13 @@
         <navigation />
       </div>
       <div class="container">
-        <h3 class="quote">
-          Every soul will taste death, and you will only be given your [full]
-          compensation on the Day of Resurrection. So he who is drawn away from
-          the Fire and admitted to Paradise has attained [his desire]. And what
-          is the life of this world except the enjoyment of delusion.
+        <h3 class="Heading">
+          Sharing Hapiness to people by giving someone
+          <br />Sahoor & Iftar this Ramadan
         </h3>
-        <p class="quote source">
-          Surah Ali 'Imran [3:185] - Al-Qur'an al-Kareem
-        </p>
         <div class="buttons">
           <router-link class="btn btn-prm" to="/">Donate Now</router-link>
-          <router-link class="btn btn-sec" to="/about">Learn More</router-link>
+          <router-link class="btn btn-sec" to="/">Choose a mosque</router-link>
         </div>
       </div>
     </div>
@@ -34,7 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
-  background-image: url("../../assets/img/praybg.png");
+  background-image: url("../../assets/img/feeding.png");
   width: 100%;
   // position: absolute;
   &__gradient {
@@ -59,15 +54,12 @@ export default {
     );
     color: $white;
   }
-  .quote {
-    font-size: 2rem;
+  .Heading {
+    font-size: 3rem;
     font-weight: 400;
     // @include respond-phone {
     //   font-size: 1.6rem;
     // }
-    &.source {
-      margin-top: 2.5rem;
-    }
   }
   .buttons {
     margin-top: 2rem;
