@@ -1,7 +1,9 @@
 <template>
   <section class="hero">
     <div class="hero__gradient">
-      <div class="navbar"><navigation /></div>
+      <div class="navbar">
+        <navigation />
+      </div>
       <div class="container">
         <h3 class="quote">
           Every soul will taste death, and you will only be given your [full]
@@ -14,7 +16,7 @@
         </p>
         <div class="buttons">
           <router-link class="btn btn-prm" to="/">Donate Now</router-link>
-          <router-link class="btn btn-sec" to="/">Learn More</router-link>
+          <router-link class="btn btn-sec" to="/about">Learn More</router-link>
         </div>
       </div>
     </div>

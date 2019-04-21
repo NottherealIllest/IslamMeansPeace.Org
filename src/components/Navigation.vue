@@ -1,6 +1,8 @@
 <template>
   <div class="navtar">
-    <logo />
+    <router-link to="/">
+      <logo />
+    </router-link>
     <ramadan />
   </div>
 </template>
@@ -18,8 +20,10 @@ export default {
 
 <style lang="scss">
 .navtar {
-  padding: 2rem;
-
+  padding: 2rem 10rem;
+  @include respond-phone {
+    padding: 2rem;
+  }
   display: flex;
   justify-content: space-between;
   align-items: center;
