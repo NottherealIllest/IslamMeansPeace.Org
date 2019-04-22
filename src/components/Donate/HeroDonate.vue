@@ -2,12 +2,12 @@
   <section class="hero">
     <div class="hero__gradient">
       <div class="navbar">
-        <navigation />
+        <navigation/>
       </div>
       <div class="container">
         <h3 class="Heading">
           Sharing Hapiness to people by giving someone
-          <br />Sahoor & Iftar this Ramadan
+          <br>Sahoor & Iftar this Ramadan
         </h3>
         <div class="buttons">
           <router-link class="btn btn-prm" to="/">Donate Now</router-link>
