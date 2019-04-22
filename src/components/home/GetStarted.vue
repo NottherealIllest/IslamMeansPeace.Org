@@ -16,10 +16,8 @@
         </div>
 
         <div class="col-md-6">
-          <div class="buttons">
-            <router-link class="btn btn-trt" to="/about"
-              >Donate Now</router-link
-            >
+          <div class="buttons btn-cont">
+            <router-link class="btn btn-trt" to="/about">Donate Now</router-link>
           </div>
         </div>
       </div>
@@ -31,16 +29,25 @@
 .GetStarted {
   // position: absolute;
   color: $black;
-  padding: 5rem;
+  padding: 10rem 0;
+  .row {
+    display: flex;
+    align-items: center;
+    @include respond-phone {
+      display: block;
+    }
+    @include respond-tablet {
+      display: block;
+    }
+  }
 
   .GetStarted-Text {
     font-size: 3rem;
     font-weight: 100;
-    margin-top: 3rem;
   }
   .buttons {
-    margin-top: 3rem;
-    margin-right: 10rem;
+    justify-content: center;
+    display: flex;
     .btn-prm {
       margin-left: 15rem;
       padding: 1.2 3.2rem;

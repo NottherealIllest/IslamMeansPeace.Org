@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero />
+    <hero/>
     <div class="container">
       <section class="about">
         <div class="row">
@@ -24,22 +24,22 @@
         </div>
         <div class="sets">
           <div class="set">
-            <img src="@/assets/svg/light-bulb.svg" alt="Light Bulb" />
+            <img src="@/assets/svg/light-bulb.svg" alt="Light Bulb">
             <p>IDEA</p>
           </div>
-          <img src="@/assets/svg/divider.svg" alt class="divider" />
+          <img src="@/assets/svg/divider.svg" alt class="divider">
           <div class="set">
-            <img src="@/assets/svg/volunteer.svg" alt="Light Bulb" />
+            <img src="@/assets/svg/volunteer.svg" alt="Light Bulb">
             <p>Volunteer</p>
           </div>
-          <img src="@/assets/svg/divider.svg" alt class="divider" />
+          <img src="@/assets/svg/divider.svg" alt class="divider">
           <div class="set">
-            <img src="@/assets/svg/supplies.svg" alt="Light Bulb" />
+            <img src="@/assets/svg/supplies.svg" alt="Light Bulb">
             <p>supplies</p>
           </div>
-          <img src="@/assets/svg/divider.svg" alt class="divider" />
+          <img src="@/assets/svg/divider.svg" alt class="divider">
           <div class="set">
-            <img src="@/assets/svg/donations.svg" alt="Light Bulb" />
+            <img src="@/assets/svg/donations.svg" alt="Light Bulb">
             <p>Donations</p>
           </div>
         </div>

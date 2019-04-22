@@ -1,0 +1,103 @@
+// * * binded style variables * *
+// --options-height --> dynamic options menu height
+// --option-height --> dynamic single option item height
+// --dropdown-width --> dynamic dropdown & options drawer width
+// * * * Variables * * *
+// $default-border-radius: 4px;
+$default-text-hover-color: black;
+$default-hover-color: linear-gradient( 106.32deg, #5c258d -14.04%, #4389a2 115.3%);
+$default-text-color: #fff;
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    // width: 45rem;
+    width: 40rem;
+    @include respond-phone {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    position: relative;
+    border: 1px solid #5c258d;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    color: var(--dropdown-default-text-color);
+    background: #f1f2f6;
+    user-select: none;
+    transition: all 0.7s linear;
+    .dropdown-label-container {
+        display: flex;
+        width: 100%;
+        .dropdown-label {
+            padding: 2.8rem 1.3rem;
+            display: flex;
+            justify-content: space-between;
+            flex: 1 1 auto;
+            align-items: center;
+            height: var(--option-height);
+            .text {
+                font-family: "Alegreya Sans";
+                font-size: 1.8rem;
+                flex: 1;
+            }
+            .angle-down {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: solid $default-text-color;
+                background: #f1f2f6;
+                border-width: 0 2px 2px 0;
+                padding: 4px;
+                width: 1px;
+                height: 1px;
+                margin: -3px 5px 0 0;
+                border-color: var(--dropdown-default-text-color);
+                transform: rotate(45deg);
+                transition: all 0.7s;
+            }
+            .toggled {
+                margin-bottom: -12px;
+                transform: rotate(-180deg);
+                transition: all 0.7s;
+            }
+        }
+    }
+    .options {
+        width: 100%;
+        .option {
+            display: flex;
+            align-items: center;
+            height: 35px;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 18px;
+            padding: 2.8rem;
+        }
+        .option:hover {
+            color: #fff;
+            background: $default-hover-color;
+            transition: all 0.7s;
+        }
+    }
+}
+
+.dropdown.expanded {
+    background: var(--dropdown-expanded-color);
+    border: var(--dropdown-border);
+    transition: all 0.7s linear;
+}
+
+// Expand Class - Most important part
+.expand {
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 0.4s; // Durations can be changed without touching JS
+    transition-timing-function: cubic-bezier( 0.175, 0.885, 0.32, 1.275); // Timing functions also!
+    &[aria-expanded="false"] {
+        height: 0 !important;
+        transition-timing-function: cubic-bezier( 0.6, -0.28, 0.735, 0.045); // Timing function can be different for each direction
+    }
+}
+
+// Smartphones - Landscape + Portrait
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {}

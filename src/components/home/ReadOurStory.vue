@@ -14,19 +14,13 @@
                 eiusmod tempor incididunt ut labore et dolore
               </p>
               <div class="buttons">
-                <router-link class="btn btn-prm" to="/about"
-                  >Read Our Story</router-link
-                >
+                <router-link class="btn btn-prm" to="/about">Read Our Story</router-link>
               </div>
             </div>
           </div>
 
           <div class="col-md-6">
-            <img
-              src="@/assets/img/giver.png"
-              alt
-              class="OurStory__Image responsive-img"
-            />
+            <img src="@/assets/img/giver.png" alt class="OurStory__Image responsive-img">
           </div>
         </div>
       </div>
@@ -46,9 +40,6 @@
     left: 0;
     bottom: 0;
     padding: 5rem 0;
-    @include respond-phone {
-      padding: 17rem 0;
-    }
     background: linear-gradient(
       247.3deg,
       rgba($color: $purple, $alpha: 0.99) 0.29%,
@@ -59,6 +50,15 @@
 
   &__Image {
     background-size: cover;
+    @include respond-not-web {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      background-position: top;
+    }
+    @include respond-phone {
+      height: 300px;
+    }
   }
 
   .OurStory-Text {
@@ -74,6 +74,11 @@
   .buttons {
     margin-top: 3rem;
     justify-content: center;
+    @include respond-not-web {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
     .btn-trt {
       justify-content: center;
       padding: 1.2 3.8rem;
